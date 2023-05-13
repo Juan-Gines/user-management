@@ -1,7 +1,12 @@
-import express from 'express';
+import userRouter from '#Routes/user.routes.js';
+import express, { json } from 'express';
 
 const expressApp = express();
 
-// TODO Añadir middlewares, routes...
+// Middlewares
+expressApp.use(json());
+
+// Routes
+expressApp.use('/user', userRouter);
 
 export default expressApp;
