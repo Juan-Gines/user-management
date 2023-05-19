@@ -1,10 +1,10 @@
 import userRouter from '#Routes/user.routes.js';
-import express, { json } from 'express';
+import express from 'express';
 
 const expressApp = express();
 
 // Middlewares
-expressApp.use(json());
+expressApp.use(express.json());
 
 // Routes
 expressApp.use('/user', userRouter);

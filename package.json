@@ -15,8 +15,14 @@
     "author": "Juan Ginés Alentà",
     "license": "ISC",
     "dependencies": {
+        "@sinclair/typebox": "^0.28.10",
+        "ajv": "^8.12.0",
+        "ajv-errors": "^3.0.0",
+        "ajv-formats": "^2.1.1",
+        "bcrypt": "^5.1.0",
         "dotenv": "^16.0.3",
         "express": "^4.18.2",
+        "jose": "^4.14.4",
         "mongoose": "^7.1.1"
     },
     "devDependencies": {
@@ -31,10 +37,11 @@
         "prettier": "^2.8.8"
     },
     "imports": {
+        "#Lib/*": "./src/services/lib/*",
         "#Config/*": "./src/config/*",
         "#Controllers/*": "./src/controllers/*",
         "#Routes/*": "./src/routes/*",
-        "#Services/*": "./src/services/*",
+        "#Dto/*": "./src/services/dto/*",
         "#Schemas/*": "./src/schemas/*"
     },
     "lint-staged": {
