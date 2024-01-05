@@ -18,3 +18,7 @@
 -   El usuario podrá actualizar su email, será necesario el identificador y la contraseña actual.
 -   El usuario podrá actualizar su contraseña, será necesario el identificador y la contraseña actual.
 -   El usuario podrá eliminar todos sus datos de la plataforma, será necesario el identificador y la contraseña actual.
+
+## Tecnologías 
+
+- Node
